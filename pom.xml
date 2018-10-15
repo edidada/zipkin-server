@@ -48,6 +48,7 @@
         <dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin-autoconfigure-ui</artifactId>
+            <version>1.20.0</version>
         </dependency>
     </dependencies>
 
@@ -64,7 +65,7 @@
                 <version>1.2.0</version>
                 <configuration>
                     <!-- 镜像名称 -->
-                    <imageName>${docker.image.prefix}/spring-cloud-producer</imageName>
+                    <imageName>${docker.image.prefix}/zipkin-server</imageName>
                     <!-- 依赖java镜像 -->
                     <baseImage>java</baseImage>
                     <imageTags>
